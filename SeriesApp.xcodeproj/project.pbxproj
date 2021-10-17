@@ -27,9 +27,9 @@
 		C22F4A76271C6CA300E2DAD2 /* SNCollectionViewLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A74271C6CA300E2DAD2 /* SNCollectionViewLayoutDelegate.swift */; };
 		C22F4A7E271C6F5900E2DAD2 /* SerieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A7D271C6F5900E2DAD2 /* SerieCell.swift */; };
 		C22F4A89271C7D5200E2DAD2 /* UITextField+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A88271C7D5200E2DAD2 /* UITextField+Publisher.swift */; };
-		C22F4A92271C826C00E2DAD2 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A90271C826C00E2DAD2 /* SpinnerView.swift */; };
-		C22F4A93271C826C00E2DAD2 /* SpinnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22F4A91271C826C00E2DAD2 /* SpinnerView.xib */; };
 		C22F4AA1271C8AB400E2DAD2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4AA0271C8AB400E2DAD2 /* Constants.swift */; };
+		C22F4AAE271C8E9900E2DAD2 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4AAC271C8E9900E2DAD2 /* SpinnerView.swift */; };
+		C22F4AAF271C8E9900E2DAD2 /* SpinnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22F4AAD271C8E9900E2DAD2 /* SpinnerView.xib */; };
 		C265363F271B419D0099C739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C265363E271B419D0099C739 /* AppDelegate.swift */; };
 		C2653641271B419D0099C739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2653640271B419D0099C739 /* SceneDelegate.swift */; };
 		C2653646271B419D0099C739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2653644271B419D0099C739 /* Main.storyboard */; };
@@ -88,9 +88,9 @@
 		C22F4A74271C6CA300E2DAD2 /* SNCollectionViewLayoutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNCollectionViewLayoutDelegate.swift; sourceTree = "<group>"; };
 		C22F4A7D271C6F5900E2DAD2 /* SerieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieCell.swift; sourceTree = "<group>"; };
 		C22F4A88271C7D5200E2DAD2 /* UITextField+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Publisher.swift"; sourceTree = "<group>"; };
-		C22F4A90271C826C00E2DAD2 /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
-		C22F4A91271C826C00E2DAD2 /* SpinnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpinnerView.xib; sourceTree = "<group>"; };
 		C22F4AA0271C8AB400E2DAD2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C22F4AAC271C8E9900E2DAD2 /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		C22F4AAD271C8E9900E2DAD2 /* SpinnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpinnerView.xib; sourceTree = "<group>"; };
 		C265363B271B419D0099C739 /* SeriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C265363E271B419D0099C739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2653640271B419D0099C739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -260,25 +260,25 @@
 		C22F4A8D271C822D00E2DAD2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				C22F4A8E271C823E00E2DAD2 /* Controls */,
+				C22F4AAA271C8E9900E2DAD2 /* Controls */,
 				C22F4A17271C41F100E2DAD2 /* Extensions */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		C22F4A8E271C823E00E2DAD2 /* Controls */ = {
+		C22F4AAA271C8E9900E2DAD2 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				C22F4A8F271C825900E2DAD2 /* SpinnerView */,
+				C22F4AAB271C8E9900E2DAD2 /* SpinnerView */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
 		};
-		C22F4A8F271C825900E2DAD2 /* SpinnerView */ = {
+		C22F4AAB271C8E9900E2DAD2 /* SpinnerView */ = {
 			isa = PBXGroup;
 			children = (
-				C22F4A90271C826C00E2DAD2 /* SpinnerView.swift */,
-				C22F4A91271C826C00E2DAD2 /* SpinnerView.xib */,
+				C22F4AAC271C8E9900E2DAD2 /* SpinnerView.swift */,
+				C22F4AAD271C8E9900E2DAD2 /* SpinnerView.xib */,
 			);
 			path = SpinnerView;
 			sourceTree = "<group>";
@@ -577,7 +577,7 @@
 			files = (
 				C265364B271B41A30099C739 /* LaunchScreen.storyboard in Resources */,
 				C2653648271B41A30099C739 /* Assets.xcassets in Resources */,
-				C22F4A93271C826C00E2DAD2 /* SpinnerView.xib in Resources */,
+				C22F4AAF271C8E9900E2DAD2 /* SpinnerView.xib in Resources */,
 				C2653646271B419D0099C739 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,11 +716,11 @@
 				C26536B8271B4AB00099C739 /* ApiRequest.swift in Sources */,
 				C22F4A89271C7D5200E2DAD2 /* UITextField+Publisher.swift in Sources */,
 				C22F4A75271C6CA300E2DAD2 /* SNCollectionViewLayout.swift in Sources */,
+				C22F4AAE271C8E9900E2DAD2 /* SpinnerView.swift in Sources */,
 				C22F4A0E271C3AAC00E2DAD2 /* Serie.swift in Sources */,
 				C26536B3271B4AA50099C739 /* HttpMethod.swift in Sources */,
 				C22F4A19271C420C00E2DAD2 /* UIStoryboardExtension.swift in Sources */,
 				C22F4A5C271C48C500E2DAD2 /* Container+ViewModels.swift in Sources */,
-				C22F4A92271C826C00E2DAD2 /* SpinnerView.swift in Sources */,
 				C22F4A01271C3A1A00E2DAD2 /* SerieRepositoryImpl.swift in Sources */,
 				C22F4A61271C48D300E2DAD2 /* Container+Services.swift in Sources */,
 				C22F4A46271C455100E2DAD2 /* Coordinator.swift in Sources */,

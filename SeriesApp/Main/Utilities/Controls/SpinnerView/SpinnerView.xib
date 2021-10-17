@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpinnerView" customModule="Quechua" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="fWG-OH-7ss" id="qEo-YD-v6O"/>
+                <outlet property="roundView" destination="oKw-aC-dxK" id="oxi-mG-Iig"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKw-aC-dxK">
+                    <rect key="frame" x="150" y="296" width="75" height="75"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oKw-aC-dxK" secondAttribute="height" multiplier="1:1" id="Q6p-fm-u4m"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-OH-7ss">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                    <color key="color" red="0.1332572997" green="0.32859379049999998" blue="0.52159374950000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </activityIndicatorView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fWG-OH-7ss" firstAttribute="centerY" secondItem="oKw-aC-dxK" secondAttribute="centerY" id="1il-6k-rE2"/>
+                <constraint firstItem="oKw-aC-dxK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9aI-GY-qeY"/>
+                <constraint firstItem="oKw-aC-dxK" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="jIB-m1-X3Y"/>
+                <constraint firstItem="fWG-OH-7ss" firstAttribute="centerX" secondItem="oKw-aC-dxK" secondAttribute="centerX" id="p9r-Ec-eK4"/>
+                <constraint firstItem="oKw-aC-dxK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="pNm-RW-4zx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="98.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
