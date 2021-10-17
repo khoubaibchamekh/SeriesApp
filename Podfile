@@ -9,6 +9,8 @@ target 'SeriesApp' do
   # DI Managing
   pod 'Swinject'
   pod 'SwinjectAutoregistration'
+  # Loading and caching Images
+  pod 'SDWebImage', '~> 5.0'
 
   target 'SeriesAppTests' do
     inherit! :search_paths

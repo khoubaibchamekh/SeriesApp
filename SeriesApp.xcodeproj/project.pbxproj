@@ -23,6 +23,13 @@
 		C22F4A57271C48BA00E2DAD2 /* Container+Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A56271C48BA00E2DAD2 /* Container+Coordinators.swift */; };
 		C22F4A5C271C48C500E2DAD2 /* Container+ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A5B271C48C500E2DAD2 /* Container+ViewModels.swift */; };
 		C22F4A61271C48D300E2DAD2 /* Container+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A60271C48D300E2DAD2 /* Container+Services.swift */; };
+		C22F4A75271C6CA300E2DAD2 /* SNCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A73271C6CA300E2DAD2 /* SNCollectionViewLayout.swift */; };
+		C22F4A76271C6CA300E2DAD2 /* SNCollectionViewLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A74271C6CA300E2DAD2 /* SNCollectionViewLayoutDelegate.swift */; };
+		C22F4A7E271C6F5900E2DAD2 /* SerieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A7D271C6F5900E2DAD2 /* SerieCell.swift */; };
+		C22F4A89271C7D5200E2DAD2 /* UITextField+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A88271C7D5200E2DAD2 /* UITextField+Publisher.swift */; };
+		C22F4A92271C826C00E2DAD2 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4A90271C826C00E2DAD2 /* SpinnerView.swift */; };
+		C22F4A93271C826C00E2DAD2 /* SpinnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22F4A91271C826C00E2DAD2 /* SpinnerView.xib */; };
+		C22F4AA1271C8AB400E2DAD2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22F4AA0271C8AB400E2DAD2 /* Constants.swift */; };
 		C265363F271B419D0099C739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C265363E271B419D0099C739 /* AppDelegate.swift */; };
 		C2653641271B419D0099C739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2653640271B419D0099C739 /* SceneDelegate.swift */; };
 		C2653646271B419D0099C739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2653644271B419D0099C739 /* Main.storyboard */; };
@@ -77,6 +84,13 @@
 		C22F4A56271C48BA00E2DAD2 /* Container+Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Coordinators.swift"; sourceTree = "<group>"; };
 		C22F4A5B271C48C500E2DAD2 /* Container+ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+ViewModels.swift"; sourceTree = "<group>"; };
 		C22F4A60271C48D300E2DAD2 /* Container+Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Services.swift"; sourceTree = "<group>"; };
+		C22F4A73271C6CA300E2DAD2 /* SNCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNCollectionViewLayout.swift; sourceTree = "<group>"; };
+		C22F4A74271C6CA300E2DAD2 /* SNCollectionViewLayoutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNCollectionViewLayoutDelegate.swift; sourceTree = "<group>"; };
+		C22F4A7D271C6F5900E2DAD2 /* SerieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieCell.swift; sourceTree = "<group>"; };
+		C22F4A88271C7D5200E2DAD2 /* UITextField+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Publisher.swift"; sourceTree = "<group>"; };
+		C22F4A90271C826C00E2DAD2 /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		C22F4A91271C826C00E2DAD2 /* SpinnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpinnerView.xib; sourceTree = "<group>"; };
+		C22F4AA0271C8AB400E2DAD2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C265363B271B419D0099C739 /* SeriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C265363E271B419D0099C739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2653640271B419D0099C739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				C22F4A18271C420C00E2DAD2 /* UIStoryboardExtension.swift */,
+				C22F4A88271C7D5200E2DAD2 /* UITextField+Publisher.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +197,8 @@
 		C22F4A20271C426100E2DAD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C22F4A7C271C6F3A00E2DAD2 /* SerieCell */,
+				C22F4A72271C6C7800E2DAD2 /* CollectionViewLayout */,
 				C22F4A32271C42D200E2DAD2 /* SeriesSearchViewController.swift */,
 			);
 			path = Views;
@@ -221,6 +238,49 @@
 				C22F4A60271C48D300E2DAD2 /* Container+Services.swift */,
 			);
 			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		C22F4A72271C6C7800E2DAD2 /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				C22F4A73271C6CA300E2DAD2 /* SNCollectionViewLayout.swift */,
+				C22F4A74271C6CA300E2DAD2 /* SNCollectionViewLayoutDelegate.swift */,
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		C22F4A7C271C6F3A00E2DAD2 /* SerieCell */ = {
+			isa = PBXGroup;
+			children = (
+				C22F4A7D271C6F5900E2DAD2 /* SerieCell.swift */,
+			);
+			path = SerieCell;
+			sourceTree = "<group>";
+		};
+		C22F4A8D271C822D00E2DAD2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C22F4A8E271C823E00E2DAD2 /* Controls */,
+				C22F4A17271C41F100E2DAD2 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C22F4A8E271C823E00E2DAD2 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				C22F4A8F271C825900E2DAD2 /* SpinnerView */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		C22F4A8F271C825900E2DAD2 /* SpinnerView */ = {
+			isa = PBXGroup;
+			children = (
+				C22F4A90271C826C00E2DAD2 /* SpinnerView.swift */,
+				C22F4A91271C826C00E2DAD2 /* SpinnerView.xib */,
+			);
+			path = SpinnerView;
 			sourceTree = "<group>";
 		};
 		C2653632271B419D0099C739 = {
@@ -341,10 +401,11 @@
 				C22F4A3C271C451200E2DAD2 /* Base */,
 				C2653674271B445B0099C739 /* Application */,
 				C22F4A4D271C488000E2DAD2 /* DependencyInjection */,
-				C22F4A17271C41F100E2DAD2 /* Extensions */,
+				C22F4A8D271C822D00E2DAD2 /* Utilities */,
 				C2653647271B41A30099C739 /* Assets.xcassets */,
 				C2653649271B41A30099C739 /* LaunchScreen.storyboard */,
 				C265364C271B41A30099C739 /* Info.plist */,
+				C22F4AA0271C8AB400E2DAD2 /* Constants.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -516,6 +577,7 @@
 			files = (
 				C265364B271B41A30099C739 /* LaunchScreen.storyboard in Resources */,
 				C2653648271B41A30099C739 /* Assets.xcassets in Resources */,
+				C22F4A93271C826C00E2DAD2 /* SpinnerView.xib in Resources */,
 				C2653646271B419D0099C739 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,24 +709,30 @@
 				C22F49F1271C396900E2DAD2 /* SerieRepository.swift in Sources */,
 				C22F4A4F271C489D00E2DAD2 /* Container+RegisterDependencies.swift in Sources */,
 				C265363F271B419D0099C739 /* AppDelegate.swift in Sources */,
+				C22F4A76271C6CA300E2DAD2 /* SNCollectionViewLayoutDelegate.swift in Sources */,
 				C22F4A33271C42D200E2DAD2 /* SeriesSearchViewController.swift in Sources */,
 				C22F4A2E271C42BE00E2DAD2 /* SeriesSearchViewModel.swift in Sources */,
 				C26536AB271B4A990099C739 /* ApiError.swift in Sources */,
 				C26536B8271B4AB00099C739 /* ApiRequest.swift in Sources */,
+				C22F4A89271C7D5200E2DAD2 /* UITextField+Publisher.swift in Sources */,
+				C22F4A75271C6CA300E2DAD2 /* SNCollectionViewLayout.swift in Sources */,
 				C22F4A0E271C3AAC00E2DAD2 /* Serie.swift in Sources */,
 				C26536B3271B4AA50099C739 /* HttpMethod.swift in Sources */,
 				C22F4A19271C420C00E2DAD2 /* UIStoryboardExtension.swift in Sources */,
 				C22F4A5C271C48C500E2DAD2 /* Container+ViewModels.swift in Sources */,
+				C22F4A92271C826C00E2DAD2 /* SpinnerView.swift in Sources */,
 				C22F4A01271C3A1A00E2DAD2 /* SerieRepositoryImpl.swift in Sources */,
 				C22F4A61271C48D300E2DAD2 /* Container+Services.swift in Sources */,
 				C22F4A46271C455100E2DAD2 /* Coordinator.swift in Sources */,
 				C26536BF271B4B220099C739 /* HttpClient.swift in Sources */,
 				C22F4A26271C42B300E2DAD2 /* SeriesSearchCoordinator.swift in Sources */,
+				C22F4A7E271C6F5900E2DAD2 /* SerieCell.swift in Sources */,
 				C22F4A38271C440000E2DAD2 /* AppCoordinator.swift in Sources */,
 				C2653641271B419D0099C739 /* SceneDelegate.swift in Sources */,
 				C22F4A57271C48BA00E2DAD2 /* Container+Coordinators.swift in Sources */,
 				C26536A2271B4A750099C739 /* APIClient.swift in Sources */,
 				C22F4A3E271C452E00E2DAD2 /* BaseCoordinator.swift in Sources */,
+				C22F4AA1271C8AB400E2DAD2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

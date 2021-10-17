@@ -5,7 +5,7 @@
 //  Created by Khoubaib Chamekh on 10/17/21.
 //
 
-struct Serie {
+struct Serie: Hashable {
     let title: String
     let subtitle: String
     let previewImageURL: String
