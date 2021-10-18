@@ -10,6 +10,7 @@ import Foundation
 final class SerieRepositoryImpl: SerieRepository {
     
     private let httpClient: HttpClient
+    private let hostURL = "https://api.ocs.fr"
     private let seriesEndpoint = "https://api.ocs.fr/apps/v2/contents?search=title%3D"
 
     init(httpClient: HttpClient) {
@@ -40,6 +41,30 @@ final class SerieRepositoryImpl: SerieRepository {
                 }
                 
                 completion(.success(serieList))
+
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    func getPitchForSerie(using link: String, completion: @escaping (Result<String, Error>) -> Void) {
+        guard let url = URL(string: hostURL + link) else {
+            completion(.failure(ApiError.requestFailed(error: "Invalid URL")))
+            return
+        }
+        
+        let apiRequest = ApiRequest(resource: url)
+        httpClient.request(apiRequest) { result in
+            switch result {
+            case .success(let json):
+                var pitchToRender = ""
+                if let season = ((json["contents"] as? [String: Any])?["seasons"] as? [[String: Any]])?[0],
+                   let pitch = season["pitch"] as? String {
+                    pitchToRender = pitch
+                }
+                
+                completion(.success(pitchToRender))
 
             case .failure(let error):
                 completion(.failure(error))
