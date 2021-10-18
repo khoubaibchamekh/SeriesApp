@@ -50,14 +50,14 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ls-CQ-dEF">
-                                                    <rect key="frame" x="11" y="105.5" width="138" height="16"/>
+                                                    <rect key="frame" x="11" y="101.5" width="138" height="16"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBTITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9S-yw-3m0">
-                                                    <rect key="frame" x="11" y="131.5" width="138" height="13.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                                    <rect key="frame" x="11" y="127.5" width="138" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -67,11 +67,11 @@
                                                 <constraint firstItem="dIq-Cl-IVu" firstAttribute="width" secondItem="2bq-ai-ZlT" secondAttribute="width" multiplier="0.9" id="4Te-pn-S3Q"/>
                                                 <constraint firstItem="dIq-Cl-IVu" firstAttribute="centerX" secondItem="2bq-ai-ZlT" secondAttribute="centerX" id="EMl-MY-KuO"/>
                                                 <constraint firstItem="dIq-Cl-IVu" firstAttribute="centerY" secondItem="2bq-ai-ZlT" secondAttribute="centerY" id="GTg-gQ-KSX"/>
+                                                <constraint firstItem="f9S-yw-3m0" firstAttribute="bottom" secondItem="dIq-Cl-IVu" secondAttribute="bottom" constant="-10" id="RsC-EM-X3h"/>
                                                 <constraint firstItem="f9S-yw-3m0" firstAttribute="trailing" secondItem="dIq-Cl-IVu" secondAttribute="trailing" constant="-3" id="Tlq-Zg-JGo"/>
                                                 <constraint firstItem="3Ls-CQ-dEF" firstAttribute="leading" secondItem="dIq-Cl-IVu" secondAttribute="leading" constant="3" id="bbt-el-iE5"/>
                                                 <constraint firstItem="3Ls-CQ-dEF" firstAttribute="trailing" secondItem="dIq-Cl-IVu" secondAttribute="trailing" constant="-3" id="kvn-0n-Mgi"/>
                                                 <constraint firstItem="f9S-yw-3m0" firstAttribute="leading" secondItem="dIq-Cl-IVu" secondAttribute="leading" constant="3" id="ofm-QY-WpX"/>
-                                                <constraint firstAttribute="bottom" secondItem="f9S-yw-3m0" secondAttribute="bottom" constant="15" id="zQh-4c-kc8"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="160" height="160"/>
