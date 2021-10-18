@@ -19,17 +19,19 @@ enum Section {
 
 class SeriesSearchViewModel {
     
+    var didTapOnSerie = PassthroughSubject<Serie, Never>()
     @Published var searchText = ""
     @Published private(set) var series: [Serie] = []
-    @Published private(set) var state: SeriesSearchState = .loading
-    
+    @Published private(set) var state: SeriesSearchState = .finishedLoading
     private let serieRepository: SerieRepository
     private var bindings = Set<AnyCancellable>()
 
     init(serieRepository: SerieRepository) {
         self.serieRepository = serieRepository
         $searchText
-            .sink { [weak self] in self?.fetchSeries(with: $0) }
+            .sink { [weak self] in
+                $0.isEmpty ? self?.series = [] : self?.fetchSeries(with: $0)
+            }
             .store(in: &bindings)
     }
     

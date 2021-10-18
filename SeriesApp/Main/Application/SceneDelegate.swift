@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let navigationController = storyBoard.instantiateViewController(withIdentifier: "navigation") as! UINavigationController
         // Create app Coordinator based on UIWindow Scene and the main navigation controller
-//        let appCoordinator = AppDelegate.container.resolve(AppCoordinator.self, arguments: window, navigationController)
         let appCoordinator = AppCoordinator(window: window, navigation: navigationController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

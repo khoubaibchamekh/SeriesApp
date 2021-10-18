@@ -39,7 +39,8 @@ class SeriesSearchViewController: UIViewController {
         collectionView.backgroundColor = .white
         searchTextField.autocorrectionType = .no
         searchTextField.backgroundColor = .white
-        searchTextField.placeholder = "Serie name"
+        searchTextField.placeholder = "Nom du serie"
+        navigationItem.title = "Recherche"
     }
     
     private func configureDataSource() {
@@ -81,9 +82,8 @@ class SeriesSearchViewController: UIViewController {
                 self?.startLoading()
             case .finishedLoading:
                 self?.finishLoading()
-            case .error(let error):
+            case .error:
                 self?.finishLoading()
-                debugPrint(error.localizedDescription)
             }
         }
         
@@ -111,6 +111,14 @@ class SeriesSearchViewController: UIViewController {
         snapshot.appendSections([.series])
         snapshot.appendItems(viewModel?.series ?? [])
         dataSource.apply(snapshot, animatingDifferences: true)
+    }
+}
+
+extension SeriesSearchViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let serie = viewModel?.series[indexPath.row] {
+            viewModel?.didTapOnSerie.send(serie)
+        }
     }
 }
 

@@ -8,5 +8,5 @@
 import Foundation
 
 struct Constants {
-    static let serverBaseUrl = "https://api.ocs.fr/"
+    static let serverBaseUrl = "https://api.ocs.fr"
 }

@@ -16,5 +16,10 @@ extension Container {
         }
         
         autoregister(SeriesSearchCoordinator.self, initializer: SeriesSearchCoordinator.init)
+        register(SerieDetailsCoordinator.self) { (resolver, serie: Serie) -> SerieDetailsCoordinator in
+            return SerieDetailsCoordinator(
+                viewModel: resolver.resolve(SerieDetailsViewModel.self, argument: serie)!
+            )
+        }
     }
 }
